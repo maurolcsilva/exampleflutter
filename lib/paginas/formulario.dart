@@ -7,6 +7,7 @@ class Formulario extends StatefulWidget {
 
 class _FormularioState extends State<Formulario> {
   final _chaveform = GlobalKey<FormState>();
+  //Variáveis usadas em conjunto com o CheckBox
   bool estadoopcao1=false,estadoopcao2=false,estadoopcao3=false;
   
   
@@ -84,6 +85,7 @@ class _FormularioState extends State<Formulario> {
     );
   }
 
+  //Métodos usados para facilitar a criação dos textos
   _texto(String mensagem){
     return Text(mensagem,style: TextStyle(
       fontSize: 20,
